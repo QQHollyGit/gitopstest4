@@ -10,7 +10,7 @@ approver: true
 # List of checks that shall be performed.
 checks:
     # -- Name of operator to check. Use the value of the currentCSV (packagemanifest) but WITHOUT the version !!
-  - operatorName: name-of-operator
+  - operatorName: camelk-operator
 
     # -- If the Operator is not yet ready wait this amount of seconds.
     # @default -- 20

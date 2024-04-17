@@ -3,6 +3,7 @@ operators:
     enabled: true
     namespace:
       name: camelktest
+      create: true
     subscription:
       channel: 1.10.x
       approval: Manual
@@ -10,18 +11,15 @@ operators:
       source: redhat-operators
       sourceNamespace: openshift-marketplace
       csv: red-hat-camel-k-operator.v1.10.6
-
+    operatorgroup:
+      create: true
+      notownnamespace: true
 helper-status-checker:
       enabled: true 
       approver: true
-
-      # use the value of the currentCSV (packagemanifest) but WITHOUT the version !!
       operatorName: red-hat-camel-k
-
-      # where operator is installed
       namespace:
         name: camelktest
-
       serviceAccount: 
         create: true
         name: "status-checker" 

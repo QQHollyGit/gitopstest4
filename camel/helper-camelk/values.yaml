@@ -1,8 +1,9 @@
+helper-camelk:
 operators:
   camelk-operator:
     enabled: true
     namespace:
-      name: camelktest
+      name: camelktest5
       create: true
     subscription:
       channel: 1.10.x
@@ -19,7 +20,7 @@ helper-status-checker:
       approver: true
       operatorName: red-hat-camel-k
       namespace:
-        name: camelktest
+        name: camelktest5
       serviceAccount: 
         create: true
         name: "status-checker" 
